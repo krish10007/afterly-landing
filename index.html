@@ -250,16 +250,6 @@ function Nav({ mobile }) {
       maxWidth: 1240, margin: '0 auto', width: '100%',
     }}>
       <AfterlyWordmark size={mobile ? 16 : 17} />
-      {!mobile && (
-        <div style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
-          {['How it works', 'Story', 'Privacy'].map(l => (
-            <a key={l} href="#" style={{
-              color: PAL.muted, fontFamily: FONT,
-              fontSize: 14, textDecoration: 'none', letterSpacing: -0.1,
-            }}>{l}</a>
-          ))}
-        </div>
-      )}
       <div style={{ opacity: mobile ? 0 : 1, pointerEvents: mobile ? 'none' : 'auto' }}>
         <CTAButton small>Download</CTAButton>
       </div>
