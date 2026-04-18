@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Privacy Policy — afterly</title>
+
+<meta name="description" content="afterly's Privacy Policy — how we collect, use, and safeguard your information.">
+<meta name="theme-color" content="#0D0B18">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #0D0B18;
+    --accent: #7C6CFF;
+    --white: #FFFFFF;
+    --lavender: #E6E1FF;
+    --muted: #A8A3C7;
+    --muted-soft: rgba(168,163,199,0.6);
+    --card-border: rgba(230,225,255,0.08);
+    --section-border: rgba(230,225,255,0.08);
+    --font: "DM Sans", system-ui, -apple-system, sans-serif;
+    --font-display: "Playfair Display", Georgia, serif;
+  }
+
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  body {
+    font-family: var(--font);
+    -webkit-font-smoothing: antialiased;
+    color: var(--lavender);
+  }
+  * { box-sizing: border-box; }
+  ::selection { background: rgba(124,108,255,0.4); color: #fff; }
+  a:hover { color: var(--lavender) !important; }
+  button:focus, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+  /* ── Nav (matches index.html) ─────────────────────────── */
+  .nav {
+    position: relative; z-index: 10;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 24px 56px;
+    max-width: 1240px; margin: 0 auto; width: 100%;
+  }
+  .wordmark {
+    font-family: var(--font-display); font-weight: 800; font-style: italic;
+    font-size: 17px; letter-spacing: -0.5px; line-height: 1;
+    white-space: nowrap; text-decoration: none;
+  }
+  .wordmark .a { color: var(--lavender); }
+  .wordmark .b { color: var(--accent); }
+  .nav-links { display: flex; align-items: center; gap: 32px; }
+  .nav-links a {
+    color: var(--muted); font-family: var(--font);
+    font-size: 14px; text-decoration: none; letter-spacing: -0.1px;
+  }
+  .cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 10px 22px; border-radius: 999px;
+    background: rgba(139,92,246,0.85); border: none;
+    color: var(--white); font-family: var(--font);
+    font-size: 13px; font-weight: 600; letter-spacing: -0.2px;
+    cursor: pointer; text-decoration: none;
+    box-shadow: 0 8px 28px rgba(124,108,255,0.35), inset 0 1px 0 rgba(255,255,255,0.18);
+    transition: transform 200ms;
+  }
+  .cta:hover { transform: translateY(-1px); color: var(--white) !important; }
+
+  /* ── Content column ───────────────────────────────────── */
+  .content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 24px;
+  }
+  .content h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 56px;
+    color: var(--white);
+    letter-spacing: -0.04em;
+    line-height: 1.04;
+    margin: 0;
+  }
+  .content .subtitle {
+    font-family: var(--font);
+    font-size: 14px;
+    color: var(--muted-soft);
+    letter-spacing: 0.2px;
+    margin: 14px 0 0;
+  }
+  .content section {
+    padding: 36px 0;
+    border-top: 1px solid var(--section-border);
+  }
+  .content section:first-of-type {
+    margin-top: 16px;
+  }
+  .content h2 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 22px;
+    color: var(--lavender);
+    letter-spacing: -0.01em;
+    margin: 0 0 16px;
+  }
+  .content p {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin: 0 0 12px;
+  }
+  .content p:last-child { margin-bottom: 0; }
+  .content ul {
+    margin: 12px 0 0;
+    padding-left: 18px;
+  }
+  .content li {
+    font-family: var(--font);
+    font-size: 16px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+  .content a {
+    color: var(--lavender);
+    text-decoration: underline;
+    text-decoration-color: rgba(230,225,255,0.3);
+    text-underline-offset: 2px;
+  }
+
+  /* ── Footer (matches index.html) ──────────────────────── */
+  .footer { position: relative; border-top: 1px solid var(--card-border); }
+  .footer-inner {
+    max-width: 1240px; margin: 0 auto;
+    padding: 32px 56px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .footer-links { display: flex; gap: 24px; }
+  .footer-links a {
+    color: var(--muted); font-family: var(--font);
+    font-size: 13px; text-decoration: none;
+  }
+  .footer .copy {
+    font-family: var(--font); font-size: 12px; color: var(--muted-soft);
+  }
+
+  /* ── Mobile ───────────────────────────────────────────── */
+  @media (max-width: 720px) {
+    .nav { padding: 20px 24px; }
+    .nav-links { display: none; }
+    .nav .cta { display: none; }
+    .content { padding: 48px 24px 64px; }
+    .content h1 { font-size: 38px; }
+    .footer-inner {
+      padding: 28px 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="wordmark"><span class="a">after</span><span class="b">ly</span></a>
+  <div class="nav-links">
+    <a href="/#how">How it works</a>
+    <a href="/#story">Story</a>
+    <a href="/privacy">Privacy</a>
+  </div>
+  <a href="/" class="cta">Download</a>
+</nav>
+
+<main class="content">
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Last updated: April 18, 2026</p>
+
+  <section>
+    <h2>1. Introduction</h2>
+    <p>afterly ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use the afterly mobile application. By using afterly, you agree to the collection and use of information in accordance with this policy.</p>
+  </section>
+
+  <section>
+    <h2>2. Information We Collect</h2>
+    <p>Information you provide directly: first name, email address via Apple or Google Sign In, onboarding questionnaire responses, and unsent letters or journal entries created in the app.</p>
+    <p>Information collected automatically: streak data, app usage patterns, daily check-in responses, and subscription status.</p>
+  </section>
+
+  <section>
+    <h2>3. How We Use Your Information</h2>
+    <p>We use your information to create and maintain your account, personalize your recovery plan, provide AI-powered support features, track your no-contact streak, send optional daily notifications, process your subscription, and improve the app.</p>
+  </section>
+
+  <section>
+    <h2>4. Third-Party Services</h2>
+    <p>afterly uses the following third-party services:</p>
+    <ul>
+      <li><strong>Supabase</strong> — database and authentication. Privacy Policy: <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
+      <li><strong>RevenueCat</strong> — subscription management. Privacy Policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
+      <li><strong>Anthropic</strong> — powers AI support features. Your first name and anonymized message content (max 500 characters) are sent for processing. Privacy Policy: <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a></li>
+      <li><strong>Apple Sign In / Google Sign In</strong> — authentication only. We receive your name and email.</li>
+      <li><strong>Expo / EAS</strong> — app delivery and updates. Privacy Policy: <a href="https://expo.dev/privacy" target="_blank" rel="noopener">expo.dev/privacy</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Data Storage and Security</h2>
+    <p>Your data is stored on Supabase servers protected by Row Level Security. Authentication tokens are stored in your device's secure keychain. We use industry-standard encryption for all data transmission. We never sell your data to third parties.</p>
+  </section>
+
+  <section>
+    <h2>6. Sensitive Information</h2>
+    <p>The personal and emotional content you share within afterly is treated with the highest level of sensitivity and confidentiality. We do not share, sell, or use your emotional content for advertising purposes.</p>
+  </section>
+
+  <section>
+    <h2>7. Data Retention</h2>
+    <p>We retain your data for as long as your account is active. If you delete your account, your personal data is permanently deleted from our servers within 30 days.</p>
+  </section>
+
+  <section>
+    <h2>8. Your Rights</h2>
+    <p>You have the right to access, correct, or delete your personal data. To exercise these rights contact: <a href="mailto:support@useafterly.com">support@useafterly.com</a></p>
+  </section>
+
+  <section>
+    <h2>9. Children's Privacy</h2>
+    <p>afterly is not intended for users under the age of 17. We do not knowingly collect data from anyone under 17.</p>
+  </section>
+
+  <section>
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <section>
+    <h2>11. Contact Us</h2>
+    <p>Email: <a href="mailto:support@useafterly.com">support@useafterly.com</a></p>
+    <p>Website: <a href="https://useafterly.com/privacy">useafterly.com/privacy</a></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="/" class="wordmark" style="font-size:15px"><span class="a">after</span><span class="b">ly</span></a>
+    <div class="footer-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/support">Support</a>
+    </div>
+    <div class="copy">© 2026 afterly</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Support — afterly</title>
+
+<meta name="description" content="Get in touch with the afterly team. We typically respond within 24 hours.">
+<meta name="theme-color" content="#0D0B18">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #0D0B18;
+    --accent: #7C6CFF;
+    --white: #FFFFFF;
+    --lavender: #E6E1FF;
+    --muted: #A8A3C7;
+    --muted-soft: rgba(168,163,199,0.6);
+    --card-fill: rgba(124,108,255,0.04);
+    --card-border: rgba(230,225,255,0.08);
+    --font: "DM Sans", system-ui, -apple-system, sans-serif;
+    --font-display: "Playfair Display", Georgia, serif;
+  }
+
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  body {
+    font-family: var(--font);
+    -webkit-font-smoothing: antialiased;
+    color: var(--lavender);
+  }
+  * { box-sizing: border-box; }
+  ::selection { background: rgba(124,108,255,0.4); color: #fff; }
+  a:hover { color: var(--lavender) !important; }
+  button:focus, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+  /* ── Nav (matches index.html) ─────────────────────────── */
+  .nav {
+    position: relative; z-index: 10;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 24px 56px;
+    max-width: 1240px; margin: 0 auto; width: 100%;
+  }
+  .wordmark {
+    font-family: var(--font-display); font-weight: 800; font-style: italic;
+    font-size: 17px; letter-spacing: -0.5px; line-height: 1;
+    white-space: nowrap; text-decoration: none;
+  }
+  .wordmark .a { color: var(--lavender); }
+  .wordmark .b { color: var(--accent); }
+  .nav-links { display: flex; align-items: center; gap: 32px; }
+  .nav-links a {
+    color: var(--muted); font-family: var(--font);
+    font-size: 14px; text-decoration: none; letter-spacing: -0.1px;
+  }
+  .cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 10px 22px; border-radius: 999px;
+    background: rgba(139,92,246,0.85); border: none;
+    color: var(--white); font-family: var(--font);
+    font-size: 13px; font-weight: 600; letter-spacing: -0.2px;
+    cursor: pointer; text-decoration: none;
+    box-shadow: 0 8px 28px rgba(124,108,255,0.35), inset 0 1px 0 rgba(255,255,255,0.18);
+    transition: transform 200ms;
+  }
+  .cta:hover { transform: translateY(-1px); color: var(--white) !important; }
+
+  /* ── Soft glow background (visual parity with index.html) ── */
+  .glow {
+    position: absolute; left: 50%; top: 40%;
+    transform: translate(-50%, -50%);
+    width: 900px; height: 900px; border-radius: 50%;
+    background: radial-gradient(circle, var(--accent) 0%, transparent 60%);
+    opacity: 0.18;
+    filter: blur(40px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── Support content ──────────────────────────────────── */
+  .stage { position: relative; overflow: hidden; }
+  .support-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 120px 24px;
+    text-align: center;
+  }
+  .support-content h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 76px;
+    color: var(--white);
+    letter-spacing: -0.04em;
+    line-height: 1.04;
+    margin: 0;
+  }
+  .support-content .subtext {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--muted);
+    line-height: 1.55;
+    letter-spacing: -0.15px;
+    max-width: 480px;
+    margin: 24px auto 0;
+  }
+
+  /* ── Glass card (matches index.html Card) ─────────────── */
+  .card {
+    background: var(--card-fill);
+    border: 1px solid var(--card-border);
+    border-radius: 18px;
+    padding: 40px 32px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    margin: 56px 0 0;
+    text-align: center;
+  }
+  .card .label {
+    font-family: var(--font);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+  }
+  .card .email {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 32px;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0;
+    word-break: break-word;
+  }
+  .card .email a {
+    color: var(--white);
+    text-decoration: none;
+  }
+  .card .response {
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--muted);
+    line-height: 1.55;
+    margin: 18px 0 0;
+  }
+  .footnote {
+    font-family: var(--font);
+    font-size: 13px;
+    color: var(--muted-soft);
+    line-height: 1.6;
+    margin: 28px auto 0;
+    max-width: 460px;
+  }
+
+  /* ── Footer (matches index.html) ──────────────────────── */
+  .footer { position: relative; border-top: 1px solid var(--card-border); }
+  .footer-inner {
+    max-width: 1240px; margin: 0 auto;
+    padding: 32px 56px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .footer-links { display: flex; gap: 24px; }
+  .footer-links a {
+    color: var(--muted); font-family: var(--font);
+    font-size: 13px; text-decoration: none;
+  }
+  .footer .copy {
+    font-family: var(--font); font-size: 12px; color: var(--muted-soft);
+  }
+
+  /* ── Mobile ───────────────────────────────────────────── */
+  @media (max-width: 720px) {
+    .nav { padding: 20px 24px; }
+    .nav-links { display: none; }
+    .nav .cta { display: none; }
+    .support-content { padding: 80px 24px; }
+    .support-content h1 { font-size: 48px; }
+    .card { padding: 32px 24px; margin-top: 40px; }
+    .card .email { font-size: 26px; }
+    .footer-inner {
+      padding: 28px 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="wordmark"><span class="a">after</span><span class="b">ly</span></a>
+  <div class="nav-links">
+    <a href="/#how">How it works</a>
+    <a href="/#story">Story</a>
+    <a href="/privacy">Privacy</a>
+  </div>
+  <a href="/" class="cta">Download</a>
+</nav>
+
+<main class="stage">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="support-content">
+    <h1>We're here.</h1>
+    <p class="subtext">afterly is built by a small team that genuinely cares. If you're having trouble or just need to reach us, we'll get back to you.</p>
+
+    <div class="card">
+      <p class="label">Email Support</p>
+      <p class="email"><a href="mailto:support@useafterly.com">support@useafterly.com</a></p>
+      <p class="response">We typically respond within 24 hours.</p>
+    </div>
+
+    <p class="footnote">For billing or subscription issues, you can also restore your purchase directly inside the app.</p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="/" class="wordmark" style="font-size:15px"><span class="a">after</span><span class="b">ly</span></a>
+    <div class="footer-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/support">Support</a>
+    </div>
+    <div class="copy">© 2026 afterly</div>
+  </div>
+</footer>
+
+</body>
+</html>
