@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — afterly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0D0B18;
+      --accent: #7C6CFF;
+      --text: #FFFFFF;
+      --text-light: #E6E1FF;
+      --text-secondary: #A8A3C7;
+      --text-muted: rgba(168,163,199,0.6);
+      --card-bg: rgba(124,108,255,0.07);
+      --card-border: rgba(124,108,255,0.22);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-secondary);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    /* Background atmosphere */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(ellipse, rgba(124,108,255,0.12) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+    }
+
+    /* Header */
+    header {
+      margin-bottom: 64px;
+    }
+
+    .wordmark {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      color: var(--text);
+      letter-spacing: -0.5px;
+      margin-bottom: 48px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .wordmark span {
+      color: var(--accent);
+    }
+
+    .page-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(36px, 6vw, 52px);
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* Divider */
+    .divider {
+      width: 48px;
+      height: 1px;
+      background: var(--card-border);
+      margin: 40px 0;
+    }
+
+    /* Intro */
+    .intro {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 56px;
+      color: var(--text-light);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--text);
+      letter-spacing: -0.3px;
+      margin-bottom: 14px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 14px 0;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: var(--text-secondary);
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 12px;
+      top: 8px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(124,108,255,0.3);
+      transition: border-color 0.2s;
+    }
+
+    a:hover { border-color: var(--accent); }
+
+    /* Subscription box */
+    .subscription-box {
+      background: rgba(124,108,255,0.1);
+      border: 1px solid rgba(124,108,255,0.3);
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin: 20px 0;
+    }
+
+    .subscription-box p {
+      font-size: 14px;
+      color: var(--text-light);
+      margin-bottom: 10px;
+    }
+
+    .subscription-box p:last-child { margin-bottom: 0; }
+
+    /* Footer */
+    footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      border-top: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    footer p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    footer nav { display: flex; gap: 24px; }
+    footer nav a { font-size: 13px; color: var(--text-muted); border-bottom: none; }
+    footer nav a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <a class="wordmark" href="https://useafterly.com">after<span>ly</span></a>
+      <p class="page-label">Legal</p>
+      <h1>Terms of Service</h1>
+      <p class="meta">Effective date: April 19, 2025 &nbsp;·&nbsp; Last updated: April 19, 2025</p>
+    </header>
+
+    <div class="intro">
+      Please read these Terms of Service carefully before using the Afterly app. By downloading, installing, or using Afterly, you agree to be bound by these terms. If you do not agree, do not use the app.
+    </div>
+
+    <section>
+      <h2>1. About Afterly</h2>
+      <p>Afterly is a personal wellness app designed to help individuals maintain no-contact after a breakup and support emotional recovery. Afterly is developed and operated by Fnu Krish, an independent developer ("I," "me," or "my").</p>
+      <p>Afterly is not a medical product, therapy service, or mental health treatment. It is a self-help tool intended for general wellness purposes only.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>2. Eligibility</h2>
+      <p>You must be at least 13 years of age to use Afterly. By using the app, you confirm that you meet this requirement. If you are under 18, you represent that you have your parent or guardian's permission.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>3. Subscriptions & Billing</h2>
+      <p>Afterly offers the following subscription options:</p>
+      <ul>
+        <li>Monthly plan — billed monthly</li>
+        <li>Annual plan — billed once per year, includes a 3-day free trial</li>
+      </ul>
+
+      <div class="subscription-box">
+        <p><strong style="color:#fff">Auto-renewal disclosure:</strong> Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period. Your account will be charged for renewal within 24 hours prior to the end of the current period at the rate of your selected plan.</p>
+        <p>You can manage and cancel your subscription at any time through your Apple App Store or Google Play account settings. Cancellation takes effect at the end of the current billing period — you will retain access until then.</p>
+        <p>Prices displayed in the app are in your local currency as determined by the App Store or Google Play and may vary by region.</p>
+      </div>
+
+      <p>Free trial eligibility is determined by Apple or Google. If you have previously used a free trial for Afterly on the same Apple ID or Google account, you may not be eligible for another.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>4. Refunds</h2>
+      <p>All purchases are processed by Apple (App Store) or Google (Google Play). Refund requests are subject to their respective refund policies. I do not have the ability to issue refunds directly.</p>
+      <ul>
+        <li>Apple refunds: <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></li>
+        <li>Google refunds: through Google Play support</li>
+      </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>5. Restore Purchases</h2>
+      <p>If you previously purchased a subscription and need to restore access, use the "Restore Purchases" option in the app. Your subscription is tied to your Apple ID or Google account and can be recovered by signing in with the same account used at the time of purchase.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>6. Acceptable Use</h2>
+      <p>You agree not to use Afterly to:</p>
+      <ul>
+        <li>Violate any applicable law or regulation</li>
+        <li>Attempt to reverse-engineer, decompile, or extract source code from the app</li>
+        <li>Use the app in any way that could harm yourself or others</li>
+        <li>Circumvent any subscription or paywall mechanism</li>
+      </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>7. Not a Medical or Crisis Service</h2>
+      <p>Afterly is not a substitute for professional mental health care. If you are experiencing a mental health crisis, thoughts of self-harm, or an emergency, please contact a licensed professional or emergency services immediately.</p>
+      <ul>
+        <li>US Crisis Line: 988 (call or text)</li>
+        <li>International: <a href="https://www.befrienders.org" target="_blank">befrienders.org</a></li>
+      </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>8. Intellectual Property</h2>
+      <p>All content within Afterly — including design, copy, illustrations, and code — is owned by Fnu Krish. You may not reproduce, distribute, or create derivative works from any part of the app without explicit written permission.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>9. Disclaimer of Warranties</h2>
+      <p>Afterly is provided "as is" without warranties of any kind, either express or implied. I do not warrant that the app will be uninterrupted, error-free, or free of harmful components. Use of the app is at your own risk.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>10. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, Fnu Krish shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of or inability to use Afterly, even if advised of the possibility of such damages.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>11. Changes to These Terms</h2>
+      <p>I may update these Terms of Service from time to time. When I do, I will update the "Last updated" date at the top of this page. Continued use of Afterly after changes are posted constitutes your acceptance of the revised terms.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>12. Governing Law</h2>
+      <p>These Terms are governed by the laws of the United States. Any disputes shall be resolved in the courts of competent jurisdiction.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>13. Contact</h2>
+      <p>Questions about these Terms? Reach out at <a href="mailto:useafterly@gmail.com">useafterly@gmail.com</a> or visit <a href="https://useafterly.com/support">useafterly.com/support</a>.</p>
+    </section>
+
+    <footer>
+      <p>© 2026 Fnu Krish. All rights reserved.</p>
+      <nav>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="/support">Support</a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
