@@ -191,9 +191,11 @@ function CTAButton({ children, primary = true, small = false }) {
   );
 }
 
+const APP_STORE_URL = 'https://apps.apple.com/us/app/afterly-no-contact-recovery/id6762640667';
+
 function AppStoreButton() {
   return (
-    <a href="#" style={{ textDecoration: 'none' }}>
+    <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
       <CTAButton>
         <Glyph.AppStore />
         Download on the App Store
@@ -251,7 +253,9 @@ function Nav({ mobile }) {
     }}>
       <AfterlyWordmark size={mobile ? 16 : 17} />
       <div style={{ opacity: mobile ? 0 : 1, pointerEvents: mobile ? 'none' : 'auto' }}>
-        <CTAButton small>Download</CTAButton>
+        <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+          <CTAButton small>Download</CTAButton>
+        </a>
       </div>
     </nav>
   );
