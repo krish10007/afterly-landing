@@ -1,34 +1,156 @@
 ---
-title: "Why Can't I Eat or Sleep After a Breakup?"
+title: Why You Can't Eat or Sleep After a Breakup (And When It Gets Better)
 slug: why-cant-i-eat-or-sleep-after-breakup
 date: 2026-05-17
 publishDate: 2026-06-03
-readTime: "2 min read"
-excerpt: "The body symptoms are real and they have a clear cause. Here's what's happening and when it stops."
+readTime: 6 min read
+excerpt: A breakup can affect more than your emotions. If eating feels
+  impossible or sleep won't come, your body may be responding to loss in ways
+  that are more normal than they seem.
 ---
 
-You're not hungry. You lie down but sleep won't come. There's a tightness in your chest that doesn't go away. You forgot to eat again, and it's already 3pm.
+You know you should eat.
 
-This is one of the more disorienting parts of a breakup - the way it takes over your body, not just your thoughts. But there's a clear reason it happens.
+You know you should sleep.
 
-## Cortisol is running the show
+But somehow both feel impossible.
 
-When the brain registers a significant loss, it activates the stress response. Cortisol and adrenaline flood the system. Your body shifts into a low-grade fight-or-flight state - prepared for threat, not rest.
+Food sits untouched.
 
-In that state, digestion is deprioritized. The stomach slows down. Food loses its appeal. Sleep becomes difficult because the nervous system is on alert, scanning for danger that isn't physical but feels real.
+Hours pass without you noticing.
 
-> You're not falling apart. Your body is recalibrating from a disruption it didn't choose.
+You finally get into bed, exhausted, only to find your mind wide awake.
 
-## Your routines were built around them
+And after a few days of this, a new worry appears:
 
-There's another layer. Over the course of a relationship, your body builds rhythms around another person. Morning messages that signaled the start of the day. Evening calls that helped you wind down. Meals that were shared, or timed around plans.
+**Why is this affecting me so much?**
 
-When those cues disappear, the routines they anchored collapse too. Your nervous system is looking for signals that no longer come. Sleep cues, hunger cues, the small moments of comfort that punctuated your day - all disrupted at once.
+Most people expect a breakup to hurt emotionally.
 
-## When does it stop?
+What surprises them is how quickly it takes over the body.
 
-For most people, the acute physical symptoms - the appetite loss, the broken sleep, the chest tension - ease within the first week. The stress hormone spike is not sustainable, and the body naturally begins to regulate.
+The loss of appetite.
 
-What helps in the meantime: eat small things even when you don't want to. Keep a sleep schedule even if it's imperfect. Get outside once a day. These aren't fixes - they're maintenance while your system stabilizes.
+The restless nights.
 
-> The body symptoms are temporary. Treating your body well while they last shortens how long they last.
+The tight feeling in your chest.
+
+The constant exhaustion.
+
+It can feel like something is wrong.
+
+Usually, it isn't.
+
+## Your Body Thinks Something Important Is Missing
+
+When a relationship ends, your brain doesn't process it as a simple change in circumstances.
+
+It processes it as a loss.
+
+And loss creates stress.
+
+The nervous system shifts into a heightened state of alertness.
+
+Your body starts paying more attention to the problem and less attention to everything else.
+
+That's why appetite often disappears.
+
+That's why sleep becomes difficult.
+
+That's why you can feel physically uncomfortable even when you're doing nothing at all.
+
+Your body isn't malfunctioning.
+
+It's responding.
+
+## There's Another Reason It Feels So Strange
+
+Most relationships create routines you never consciously notice.
+
+The morning message.
+
+The goodnight call.
+
+The person you talk to when something happens.
+
+The small habits that quietly structure your day.
+
+Then one day those signals disappear.
+
+And suddenly your mind isn't the only thing trying to adjust.
+
+Your body is too.
+
+The times you used to eat together feel different.
+
+Evenings feel different.
+
+Bedtime feels different.
+
+What you're experiencing isn't just the loss of a person.
+
+It's the loss of dozens of routines that formed around them.
+
+## The Realization Most People Need
+
+When appetite disappears or sleep falls apart, many people assume they're not coping well.
+
+But these symptoms aren't necessarily signs that you're handling the breakup badly.
+
+They're often signs that your system is still adapting to a major change.
+
+The body likes predictability.
+
+Breakups remove it overnight.
+
+For a while, everything feels off because everything is off.
+
+That doesn't mean it will stay that way.
+
+## What Actually Helps
+
+The goal isn't to force yourself back to normal immediately.
+
+The goal is to support your body while it recalibrates.
+
+Eat something small, even if you're not hungry.
+
+Keep going to bed at roughly the same time, even if sleep isn't perfect.
+
+Get outside.
+
+Move your body.
+
+Stay connected to people.
+
+None of these things instantly remove the pain.
+
+They simply give your nervous system the conditions it needs to recover.
+
+## One More Thing
+
+One of the hardest parts of heartbreak is how physical it feels.
+
+You expect sadness.
+
+You don't expect your appetite to disappear.
+
+You don't expect sleep to become a struggle.
+
+You don't expect your body to feel like it's grieving too.
+
+But in many ways, it is.
+
+The important thing to remember is that these symptoms usually aren't evidence that you're broken.
+
+They're evidence that you're adjusting.
+
+Right now, your body is reacting to a loss it didn't choose.
+
+Given enough time, it learns a new rhythm.
+
+And little by little, hunger returns.
+
+Sleep returns.
+
+And the things that feel impossible today start feeling normal again.
